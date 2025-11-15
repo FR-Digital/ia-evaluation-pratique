@@ -1,9 +1,9 @@
-[![Stars](https://img.shields.io/github/stars/lafabriq/ai-evaluation-pratique)](https://github.com/lafabriq/ai-evaluation-pratique/stargazers)
+[![Stars](https://img.shields.io/github/stars/FR-Digital/ia-evaluation-pratique)](https://github.com/FR-Digital/ia-evaluation-pratique/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![French](https://img.shields.io/badge/Lang-Français-blue)]()
 [![LaFabriqAI](https://img.shields.io/badge/By-LaFabriqAI-purple)](https://lafabriq.ai)
 
-# ai-evaluation-pratique
+# ia-evaluation-pratique
 
 > **Savoir si votre IA fonctionne bien, sans être data scientist**
 
@@ -76,12 +76,14 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 
 ⭐ **Aimez ce repo ?** Donnez-nous une star !
 
-❓ **Questions ?** [Ouvrez une issue](https://github.com/lafabriq/ai-evaluation-pratique/issues)
+❓ **Questions ?** [Ouvrez une issue](https://github.com/FR-Digital/ia-evaluation-pratique/issues)
 
 🤝 **Envie de contribuer ?** [CONTRIBUTING.md](CONTRIBUTING.md)
 
 **Autres outils pour managers :**
-- [ai-vendor-selection](https://github.com/lafabriq/ai-vendor-selection) - Choisir un prestataire IA
-- [ai-project-estimation](https://github.com/lafabriq/ai-project-estimation) - Estimer coûts et délais
-- [ai-risk-management](https://github.com/lafabriq/ai-risk-management) - Gérer les risques IA
-- [Plus de repos...](https://github.com/lafabriq)
+- [ia-glossaire-business-fr](https://github.com/FR-Digital/ia-glossaire-business-fr) - Comprendre le vocabulaire IA
+- [ia-vendor-selection](https://github.com/FR-Digital/ia-vendor-selection) - Choisir un prestataire IA
+- [ia-project-estimation](https://github.com/FR-Digital/ia-project-estimation) - Estimer coûts et délais
+- [ia-risk-management](https://github.com/FR-Digital/ia-risk-management) - Gérer les risques IA
+- [ia-team-building](https://github.com/FR-Digital/ia-team-building) - Constituer une équipe IA
+- [Plus de repos...](https://github.com/FR-Digital)

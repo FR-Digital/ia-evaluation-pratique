@@ -1,12 +1,12 @@
 # Guide de Contribution
 
-Merci de votre intérêt pour contribuer à **ai-evaluation-pratique** !
+Merci de votre intérêt pour contribuer à **ia-evaluation-pratique** !
 
 ## Comment Contribuer
 
 ### Signaler un Bug ou Proposer une Amélioration
 
-1. Ouvrez une [issue](https://github.com/lafabriq/ai-evaluation-pratique/issues)
+1. Ouvrez une [issue](https://github.com/FR-Digital/ia-evaluation-pratique/issues)
 2. Décrivez clairement le problème ou la suggestion
 3. Ajoutez des exemples concrets si possible
 
@@ -58,7 +58,7 @@ Chaque fichier Markdown doit inclure :
 
 ## Questions ?
 
-Ouvrez une [issue](https://github.com/lafabriq/ai-evaluation-pratique/issues) ou contactez [LaFabriqAI](https://lafabriq.ai).
+Ouvrez une [issue](https://github.com/FR-Digital/ia-evaluation-pratique/issues) ou contactez [LaFabriqAI](https://lafabriq.ai).
 
 ---
 

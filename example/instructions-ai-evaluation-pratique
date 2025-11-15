@@ -1,0 +1,257 @@
+# Instructions Spécifiques - Repo: ai-evaluation-pratique
+
+**Référence générique :** Voir fichier `instructions` pour les standards communs.
+
+---
+
+## Informations Repo
+
+**Nom :** `ai-evaluation-pratique`
+**Tagline :** "Savoir si votre IA fonctionne bien, sans être data scientist"
+**Priorité :** 🔥🔥 HAUTE
+**URL :** `https://github.com/lafabriq/ai-evaluation-pratique`
+
+---
+
+## Objectif Spécifique
+
+Donner aux managers les outils pour évaluer la qualité d'un système IA de manière simple et business-oriented, en répondant aux 3 questions :
+1. Est-ce que ça marche ?
+2. Est-ce que c'est utilisé ?
+3. Est-ce que ça rapporte ?
+
+---
+
+## Structure Complète
+
+```
+ai-evaluation-pratique/
+│
+├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── SOURCES.md
+│
+├── frameworks/
+│   ├── 3-niveaux-evaluation.md        ← PRIORITÉ 1
+│   ├── metriques-business-vs-tech.md
+│   └── quand-arreter-projet.md
+│
+├── guides/
+│   ├── organiser-tests-utilisateurs.md
+│   ├── questions-equipe-technique.md   ← PRIORITÉ 2
+│   └── criteres-go-production.md
+│
+├── templates/
+│   ├── grille-evaluation.xlsx          ← PRIORITÉ 3
+│   ├── rapport-qualite.md
+│   └── feedback-utilisateur.md
+│
+├── checklists/
+│   ├── qualite-minimum.md
+│   └── pre-production.md
+│
+└── examples/
+    ├── evaluation-chatbot.md
+    └── evaluation-analyse-sentiment.md
+```
+
+---
+
+## Contenu Prioritaire à Créer
+
+### PRIORITÉ 1 : Framework "3 Niveaux d'Évaluation"
+
+**Fichier :** `frameworks/3-niveaux-evaluation.md`
+
+**Concept clé :** Évaluer une IA en 3 niveaux séquentiels (ne pas passer au suivant sans valider le précédent)
+
+**Structure du contenu :**
+
+```markdown
+# Framework d'Évaluation IA en 3 Niveaux
+
+## Le Principe
+3 questions dans l'ordre :
+1. Niveau 1 : Est-ce que ça marche ? (Tests techniques)
+2. Niveau 2 : Est-ce que c'est utilisé ? (Engagement)
+3. Niveau 3 : Est-ce que ça rapporte ? (ROI)
+
+## Niveau 1 : Est-ce que Ça Marche ? 🔧
+- Objectif : Vérifier fonctionnement technique
+- Méthode : Test des 100 Cas (70 normaux, 20 limites, 10 pièges)
+- Scoring : ✅ Correcte = 1pt, ⚠️ Partielle = 0.5pt, ❌ Fausse = 0pt
+- Seuils : >80% validé, 60-80% améliorer, <60% stop
+- Métriques à demander : Précision >70%, Temps <5s, Erreur <10%, Dispo >95%
+- Checklist de validation
+
+## Niveau 2 : Est-ce que les Utilisateurs l'Utilisent ? 👥
+- Objectif : Vérifier adoption et satisfaction
+- Méthode : Beta Test 2-4 semaines avec 20-50 utilisateurs
+- Métriques quantitatives : utilisation/jour, temps session, abandon, thumbs up/down
+- Métriques qualitatives : satisfaction 1-5, entretiens
+- Seuils : Adoption >50%, Satisfaction >3.5/5, Thumbs up >60%, Abandon <30%
+- Signaux d'alerte et causes possibles
+- Checklist de validation
+
+## Niveau 3 : Est-ce que Ça a un Impact Business ? 💰
+- Objectif : Mesurer valeur business
+- Méthode : A/B Test sur 1-3 mois
+- KPIs à comparer : temps réponse, satisfaction, volume traité, résolution 1er contact
+- Calcul ROI : (Gains - Coûts) / Coûts × 100
+- Seuils : ROI >0%, Payback <18 mois, KPI +10%
+- Checklist de validation
+
+## Quand Arrêter un Projet
+- 🔴 Niveau 1 échoue (<60%) → Stop
+- 🟡 Niveau 2 échoue (<30% adoption) → Améliorer 1-2 mois ou Stop
+- 🟢 Niveau 3 décevant (ROI <0%) → Optimiser 3-6 mois ou Stop
+
+## Résumé Visuel (flowchart ASCII)
+```
+
+**Exemples à inclure :**
+- Chatbot SAV : cas normal, limite, piège avec scoring
+- Tableau comparatif A/B test avec métriques réelles
+- Calcul ROI concret (180k€ gains - 105k€ coûts = 71% ROI)
+
+---
+
+### PRIORITÉ 2 : Guide "Questions à Poser à Votre Équipe Technique"
+
+**Fichier :** `guides/questions-equipe-technique.md`
+
+**Contenu :** 30 questions business-friendly organisées par catégorie
+
+**Catégories suggérées :**
+1. Questions sur la performance (5-6 questions)
+2. Questions sur la fiabilité (5-6 questions)
+3. Questions sur les données (5-6 questions)
+4. Questions sur les coûts (5-6 questions)
+5. Questions sur les risques (5-6 questions)
+
+**Format pour chaque question :**
+- La question en langage simple
+- Ce que la réponse devrait contenir
+- Signal d'alerte si la réponse est vague
+- Exemple de bonne vs mauvaise réponse
+
+---
+
+### PRIORITÉ 3 : Template Excel "Grille d'Évaluation"
+
+**Fichier :** `templates/grille-evaluation.xlsx`
+
+**Onglets :**
+1. **Test 100 Cas** - Liste des cas avec colonnes : ID, Question, Réponse attendue, Réponse IA, Score (0/0.5/1), Commentaire
+2. **Scoring Automatique** - Formules pour calculer score global, par catégorie
+3. **Dashboard** - Visualisation graphique du résultat
+4. **Instructions** - Comment utiliser le template
+
+---
+
+## Contenus Secondaires
+
+### Checklists
+
+**`checklists/qualite-minimum.md`**
+- Ce qu'il FAUT avoir avant de lancer (non négociable)
+- Format : checklist avec explication pour chaque point
+
+**`checklists/pre-production.md`**
+- Vérifications avant déploiement en production
+- Sécurité, performance, monitoring, rollback plan
+
+### Guides Additionnels
+
+**`guides/organiser-tests-utilisateurs.md`**
+- Recruter les testeurs
+- Préparer le protocole
+- Collecter le feedback
+- Analyser les résultats
+
+**`guides/criteres-go-production.md`**
+- Matrice de décision go/no-go
+- Qui décide quoi
+- Red flags vs green lights
+
+### Templates Additionnels
+
+**`templates/rapport-qualite.md`**
+- Template de rapport mensuel sur la qualité IA
+- KPIs à suivre
+- Format exécutif pour management
+
+**`templates/feedback-utilisateur.md`**
+- Formulaire de satisfaction post-utilisation
+- Questions ouvertes et fermées
+- Échelles de notation
+
+### Exemples
+
+**`examples/evaluation-chatbot.md`**
+- Cas complet documenté
+- Passage Niveau 1 → 2 → 3
+- Données réelles (anonymisées)
+- Décisions prises à chaque étape
+
+**`examples/evaluation-analyse-sentiment.md`**
+- Cas d'échec instructif
+- Pourquoi le projet a été arrêté
+- Leçons apprises
+- Ce qu'on aurait dû faire différemment
+
+---
+
+## Planning d'Exécution
+
+### Semaine 1 (Setup + Core)
+- [ ] Créer structure de dossiers
+- [ ] README.md avec présentation LaFabriqAI
+- [ ] LICENSE (MIT)
+- [ ] CONTRIBUTING.md
+- [ ] **Framework 3-niveaux-evaluation.md** (10h) ← PRIORITÉ 1
+- [ ] Checklist qualite-minimum.md (2h)
+
+### Semaine 2 (Contenu Essentiel)
+- [ ] **Guide questions-equipe-technique.md** (4h) ← PRIORITÉ 2
+- [ ] **Template grille-evaluation.xlsx** (4h) ← PRIORITÉ 3
+- [ ] Exemple evaluation-chatbot.md (3h)
+- [ ] Template feedback-utilisateur.md (2h)
+
+### Semaine 3 (Enrichissement)
+- [ ] Guide organiser-tests-utilisateurs.md
+- [ ] Guide criteres-go-production.md
+- [ ] Checklist pre-production.md
+- [ ] Template rapport-qualite.md
+
+### Semaine 4 (Finalisation)
+- [ ] Exemple evaluation-analyse-sentiment.md
+- [ ] Framework metriques-business-vs-tech.md
+- [ ] Framework quand-arreter-projet.md
+- [ ] SOURCES.md
+- [ ] Révision complète et polish
+
+---
+
+## Spécificités README
+
+Le README de ce repo doit mettre en avant :
+- Le problème : "92% de précision" ne veut rien dire pour un manager
+- La solution : 3 questions simples dans l'ordre
+- Quick Start : liens directs vers les 3 niveaux du framework
+- Exemples concrets avec résultats chiffrés
+
+---
+
+## Sources et Inspirations
+
+À référencer dans SOURCES.md :
+- CGD Framework for AI Evaluation
+- Google's Model Cards
+- Microsoft's AI Fairness Checklist
+- Expériences terrain LaFabriqAI
+
+---
+
+*Ce fichier contient les instructions spécifiques pour le repo ai-evaluation-pratique. Pour les standards généraux, voir le fichier `instructions`.*
